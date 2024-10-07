@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.flex-form {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap */
+  gap: 60px; /* Space between the flex items */
+  width: 60%; /* Set the width to 60% of the viewport to allow for margins */
+  margin: 20px auto;
+  padding: 90px 140px 160px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #d1cece;
+}
+
+.flex-item {
+  flex: 1 1 45%; /* Makes each item occupy about 45% of the width, allowing two items per row */
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup-btn {
+  flex-basis: 100%; /* Makes the submit button take the full width */
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: -140px;
+}
+
+.login-btn {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: -100px;
+}
+
+.signup-button, .login-button {
+  padding: 10px 20px;
+  background-color: #FFFF;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.forgot-pass {
+  display: flex; /* Use flexbox for positioning */
+  justify-content: flex-end; /* Align the anchor to the right */
+  margin-top: 5px; /* Space above the link */
+}
+
+.forgot-pass a {
+  text-decoration: underline; /* Underline the link */
+  color: black;
+  font-size: larger;
+}
